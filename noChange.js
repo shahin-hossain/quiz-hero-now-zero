@@ -2,6 +2,7 @@
 
 // Handle Timer
 const quizTimer = (dismiss) => {
+  // debugger;
   if (dismiss) {
     clearInterval(timer);
     return;

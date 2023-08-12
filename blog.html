@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-common h-screen">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Blog
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- Blog Accrodian start -->
+    <div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+        <div class="flex flex-col items-center">
+            <h2 class="font-bold text-5xl mt-5 tracking-tight">
+                BLOG
+            </h2>
+            <p class="text-neutral-500 text-xl mt-3">
+                Most Common Blog
+            </p>
+        </div>
+        <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> Difference of map, forEach, filter & find </span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        <h5>Differences between forEach() and map() methods:</h5> <br>
+                        <table class="border">
+                            <tr class="border">
+                                <th class="border">No.</th>
+                                <th>forEach()</th>
+                                <th>map() </th>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">1</td>
+                                <td class="border p-2">The forEach() method does not returns a new array based on the
+                                    given array.</td>
+                                <td class="border p-2">The map() method returns an entirely new array.</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">2</td>
+                                <td class="border p-2">The forEach() method returns “undefined“.</td>
+                                <td class="border p-2">The map() method returns the newly created array
+                                    according to the provided callback function.</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">3</td>
+                                <td class="border p-2">The forEach() method doesn’t return anything hence the method
+                                    chaining technique
+                                    cannot
+                                    be
+                                    applied here.</td>
+                                <td class="border p-2">With the map() method, we can chain other methods like,
+                                    reduce(),sort() etc.</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">4</td>
+                                <td class="border p-2">It is not executed for empty elements.</td>
+                                <td class="border p-2">It does not change the original array.</td>
+                            </tr>
+                        </table>
+
+                        <div class="mt-3">
+                            <p class="font-bold">The main differences between above examples is:</p>
+
+                            <p>1. filter() returns an array containing the element that satisfies the condition, but
+                                find()
+                                returns the element itself that satisfies the condition.</p>
+                            <p class="mt-3">2. In filter(), whole array is iterated despite the fact that the element
+                                being searched
+                                for
+                                is
+                                present at the beginning. But in find(), as soon as the element that satisfies the
+                                condition
+                                is found, it gets returned.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> Difference between Local Storage, Session Storage, and Cookies</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        <h5 class="font-bold">Difference between Local Storage, Session Storage, and Cookies</h5> <br>
+                        <table class="border">
+                            <tr class="border">
+                                <th class="border p-2">Local Storage</th>
+                                <th class="border p-2">Session Storage</th>
+                                <th class="border p-2">Cookies</th>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">It allows 10MB of data to be stored.</td>
+                                <td class="border p-2">It allows 5MB of data to be stored.</td>
+                                <td class="border p-2">The storage capacity is limited to 4KB of data</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">The stored data is not deleted when the browser is closed.</td>
+                                <td class="border p-2">The data is stored only for the session and will be deleted when
+                                    the
+                                    browser is
+                                    closed.</td>
+                                <td class="border p-2">The data can be set to expire at a certain time.</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">Local storage is useful for storing data that the user will need
+                                    to
+                                    access later,
+                                    such as offline data.</td>
+                                <td class="border p-2">Session storage is a great way to improve the performance of your
+                                    web
+                                    applications.
+                                </td>
+                                <td class="border p-2">Cookies are a good choice for storing data that should not be
+                                    persisted for a long
+                                    time, such as session IDs.</td>
+                            </tr>
+                            <tr class="border">
+
+                                <td class="border p-2">This is especially useful for storing data that you want to
+                                    persist
+                                    even if the user
+                                    closes the browser, such as preferences or settings.</td>
+                                <td class="border p-2">Session storage is useful for storing data that is sensitive,
+                                    such as
+                                    login
+                                    credentials.</td>
+                                <td class="border p-2">Cookies are often used to store data that is not sensitive, such
+                                    as
+                                    user preferences
+                                </td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">Local Storage is a new feature introduced in HTML5</td>
+                                <td class="border p-2">Session Storage is a new feature introduced in HTML5</td>
+                                <td class="border p-2">Cookies are the oldest (HTML4) and most wellknown mechanism.</td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">The data is not sent with the request from the client to the
+                                    server.
+                                </td>
+                                <td class="border p-2">The data is not sent with the request from the client to the
+                                    server
+                                </td>
+                                <td class="border p-2">The data is sent with the request from the client to the server
+                                </td>
+                            </tr>
+                            <tr class="border">
+                                <td class="border p-2">The data is stored on the browser and system.</td>
+                                <td class="border p-2">The data is stored on the browser only.</td>
+                                <td class="border p-2">The data is stored on the browser only.</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span>How Does The Event Loop</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        <h2 class="font-bold">The Event Loop</h2>
+                        <p>Before we discuss the event loop, lets first go through the function of the task queue. <br>
+
+                            Back to our timeout example, once the Web API finishes executing the task, it doesn’t just
+                            push
+                            it back to the Call Stack automatically. It goes to the Task Queue. <br>
+
+                            A queue is a data structure that works on the First in First out principle, so as tasks get
+                            pushed into the queue, they get out in that same order. Tasks that have been executed by the
+                            Web
+                            API’s, which are being pushed to the Task Queue, then go back to the Call Stack to get their
+                            result printed out. <br><br>
+
+                            But wait. WHAT THE HECK IS THE EVENT LOOP???</p>
+                        <img src="https://geekflare.com/wp-content/uploads/2019/10/1_7GXoHZiIUhlKuKGT22gHmA-1.png"
+                            alt="">
+                        <p>
+                            The event loop is a process that waits for the Call Stack to be clear before pushing
+                            callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop
+                            triggers and checks the Task Queue for available callbacks. If there are any, it pushes it
+                            to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
+                        </p>
+                        <img src="https://geekflare.com/wp-content/uploads/2019/10/eventLoop.png" alt="">
+                        <p>
+                            The above diagram demonstrates the basic workflow between the Event Loop and the Task Queue.
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span>How Does quizTimer() Function Works</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        <h2 class="font-bold">Works of quizTimer()</h2>
+                        <p>
+                            => quizTimer() ফাংশনের কাজ?
+
+                            যখন Quiz Submit Button এ ক্লিক করা হবে। তখন একটা Timer Open হবে। <br>
+                            timer টা handle করা হবে। quizTimer() ফাংশন দিয়ে। এই ফাংশন একটি parameter
+                            দেয়া হয়েছে, পরবর্তিতে একটি কনডিশন দেয়া হয়েছে। <br>
+                            if (dismiss) {
+                            clearInterval(timer);
+                            return;
+                            } <br>
+                            যদি dismiss parameter সত্য হয় তাহলে timer টা বন্ধ হয়ে যাবে। <br>
+                            => timer হল global Variable যার মধ্যে setInterval() রাখা হয়েছে। <br>
+                            setInterval() 1 second পর পর চলবে। <br>
+                            => let countHtml variable দিয়ে time এর field নেয়া হয়েছে। <br>
+                            => let conMin variable দিয়ে সেকেন্ড কে মিনিটে convert করা হয়েছে। <br>
+                            => let mod count এর ভাগ শেষ কত তা পাওয়ার জন্য। <br>
+                            => let min হল convertMin কে string করে length সমান যদি ১ হয় ? তাহলে 0+contMin বসবে : নইলে
+                            covtMin হবে। <br>
+                            => countSec: হল mod কে stri
+                            ng করে এটার Length যদি ১ হয় তাহলে 0+mod হবে : নইলে mod হবে।
+                            এরপর countHtml এ timer dynamic ভাবে সেট করে দেয়া হয়েছে।
+                            count++; দিয়ে count কে এক এক করে বাড়ানো হয়েছে। <br>
+                            count কে কনডিশন দিয়ে বলা হয়েছে , যদি count ৬০ বেশি হলে count কে যখন দুই দিয়ে ভাগ করা হবে।
+                            তখন countHtml red color ৭০০ bold হবে এবং ৩০০ bold সরিয়ে দিবে।
+
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </div>
+    <!-- Blog Accrodian end -->
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+</body>
+
+</html>
